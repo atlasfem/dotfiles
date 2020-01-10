@@ -9,9 +9,6 @@
 # Set wallpaper
 exec --no-startup-id nitrogen --restore
 
-# Start tint2
-exec --no-startup-id tint2
-
 # Start picom
 exec --no-startup-id  picom --respect-prop-shadow
 
@@ -63,7 +60,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
